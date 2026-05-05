@@ -10,25 +10,21 @@ import { MapPin, Phone, Clock, Star, Zap, ChevronRight, ShieldCheck, CheckCircle
 const reviews = [
   {
     name: "Tina Garra",
-    date: "a month ago",
     text: "We had a great experience with our electrician. He was on time, professional, and did amazing work in our home. Everything was done neatly and efficiently, and he left the area clean when he finished. It’s hard to find someone who is...",
     tags: ["Reasonable price"]
   },
   {
     name: "Irena Ciccone",
-    date: "4 months ago",
     text: "I’m so pleased with Burgoyne and Sons Electric LLC and hope to have a longstanding relationship with them for multiple projects. My out-dated smoke/CO alarms have been brought up to code and properly relocated...",
     tags: ["Great price"]
   },
   {
     name: "F D",
-    date: "2 years ago",
     text: "Andrew is a great electrician! He is always on time, pleasant and does not look to rob you like most other contractors. ...",
     tags: []
   },
   {
     name: "Kristen Nicholas",
-    date: "7 years ago",
     text: "Andrew is the most fair, reliable electrician around. He’s so honest that he once gave us money back bc a job took him less time than he anticipated. Very neat work as well.",
     tags: ["Local Guide"]
   }
@@ -244,7 +240,6 @@ export default function App() {
                    <div className="flex justify-between items-end">
                      <div>
                        <p className="font-bold text-xs uppercase tracking-wider text-zinc-900 dark:text-zinc-100 transition-colors">{review.name}</p>
-                       <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-400 dark:text-zinc-500 mt-1 transition-colors">{review.date}</p>
                      </div>
                    </div>
                    {review.tags.length > 0 && (
